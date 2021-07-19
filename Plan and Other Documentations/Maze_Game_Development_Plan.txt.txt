@@ -1,0 +1,39 @@
+Development Stage Plan 
+
+Feature - 1: Normal Mode (Player Solves the Maze to win) (To Be completed by End of July - 10 Days Left from 20/7)
+ 
+	Task - 1: Generate the Maze
+		Sub-Task - 1: A script to Generate the Maze using a Maze Generation alogrithm(randomized depth first search algorithm) and store the maze in a 2-D array format in a text file.
+		Sub-Task - 2: A script that takes the array containning the maze to place different traps at random locations on the maze and stores the maze as a 2-D array in a text file.
+		Sub-Task - 3: A script to draw this maze in unity.
+		 
+	Task - 2: Create Rules for Game and Player Movement
+		Sub-Task - 1: A script that drops the player at the entrance of the Maze and defins player movements and rules. 
+		Sub-Task - 2: A script that handles the Game Rules and decides if the player has won the game and checks for other conditions. 
+		Sub-Task - 3: #TBD
+
+	Task - 3: Create Multiple Levels for this Mode
+		Sub-Task - 1: A script to generate the maze of diferent size and shapes using another maze generation algorithm and stores the mazes as a 2-D array format ina text file.
+		Sub-Task - 2: A script to draw these mazes in unity.
+
+
+Feature - 2: Timed Mode (Player Solves the Maze within a timelimit to win) (To be Completed by 10/8)
+#TBD
+	
+Feature - 3: Puzzle Mode (No Player Movement, solves the maze by moving an object/ball to win) (To be Completed by 15/8)
+#TBD
+
+Feature - 4: Shop (Player Skins and other Accessories) (To be Completed by 20/8)
+#TBD
+
+Optional Feature - 5: Multiplayer Mode (5 Random Players on a random maze, first to exit the maze wins) (If the Whole Game is ready by the 3rd Week of August, ie 22/8 then we can take three weeks to complete this feature by 12/9)
+#TBD
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Testing Stage 
+
+Points To Note: 
+! Must be Tested and fix any bugs at the latest by 25th September (25/9/2021) [Approx. 10-15 Days of Testing Time available depending on project workflow rate] 
+!! Game Must be completed by 15th September and Must be Deployed after Testing and Bug Fixing at the latest by the 28th September (28/9/2021)
+
+***Note: Time Frame given above is an approximate value and can be subjected to change depend on the progress of the work and other situations.
