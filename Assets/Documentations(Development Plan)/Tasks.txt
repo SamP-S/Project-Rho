@@ -1,0 +1,68 @@
+Maze Game:
+	
+	Features-
+	
+	1 - Normal Mode:
+
+		a) Development Tasks-
+		
+		Deadline: 16th August
+		1 - Generate the Maze - Completed
+		// 2 - Check all the possible paths between two given cells of the Maze - In Progress //
+		3 - Set the Player Interaction[Sam] - 
+		4 - Set traps in the Maze[Sam] - 
+		5 - Make the Graphics of the Game -  
+		6 - Add audio to the Game -
+		7 - Rules of the Game[Dinesh]:
+			. The player has three Hearts/Lives
+			. Points to collect on the way
+			. Hearts/Lives on the way(not more than three)
+			. Start tile and end Tile to activate the timer and calculate the time.
+			. Rules for the Traps - 
+		8 - Generate Multiple Levels[Dinesh] - 
+
+		Deadline: 20th August		
+		b) Integeration
+
+		c) Testing
+	
+	
+	2 - Multiplayer Mode
+		
+		Deadline: 6th September
+		a) Development Tasks-
+		
+		1 - Use the Multiplayer Package/Service to have Multiple Players on the Game (Max. 5 Players[Note: Players must be distinguishable]) - 
+		2 - Add rules for Player Interaction with the Game and within Players - 
+		3 - Add Rewards System -  
+		
+		Deadline: 10th September
+		b) Integeration
+
+		c) Testing
+	
+	// Another Feature - Timed Mode, Possible if time is available. 
+	//Other Features: In-Game Shop,
+
+	Traps {8 Traps}:- 
+
+		Instant Kill {4 Traps}:
+
+			(Event Based: If player steps on tile and stays for like 3 seconds then fall through)
+			(Time Based: Every 3 seconds)
+
+			1. Fall through the Tile/Hole [Event Based] 
+			2. Fire pit [Time Based]
+			3. Walls closing on from sides [Event Based]
+			4. Ceiling Falling through [Event Based]
+				 
+		Non-Instant Kill {4 Traps}: 
+			(Loses Health as the longer the player interacts with them)
+			1. Shooting Arrows [Time Based]
+			2. Hot Tiles [Event Based]
+			3. Swinging Axes [Time Based or Event Based]
+			4. Water Pit [Event Based]
+	
+	Graphics:- 
+		1. Bats in the Game, does no damage but flies inside the maze.
+		 
