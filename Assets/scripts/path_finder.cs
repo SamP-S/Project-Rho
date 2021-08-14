@@ -275,8 +275,10 @@ public class path_finder : MonoBehaviour
     }
     public static bool draw_path(Wall[,] maze, int m, int n, int i, int j)
     {
-        while(locations.Count > 1)
+        Debug.Log(locations.Count);
+        while(locations.Count >= 2)
         {
+            Debug.Log(locations.Count);
             //last cell then break the loop
             if(locations.Peek()[0] == m-1 && locations.Peek()[1] == n-1)
             {
@@ -289,6 +291,10 @@ public class path_finder : MonoBehaviour
                 locations.Pop();
                 int[] next_move = get_move(maze,i,j,m,n);
                 locations.Push(next_move);
+            }
+            else if(locations.Count == 1)
+            {
+                break;
             }
             //else get next cell 
             else
@@ -323,6 +329,21 @@ public class path_finder : MonoBehaviour
 
     }
 
+    public static void first_cell(Wall[,] maze, int m, int n)
+    {
+        int[] first = new int[2]{-1,-1};
+        locations.Push(first);
+        first.SetValue(0,0);
+        locations.Push(first);
+        if(draw_path(maze,m,n,0,0) == true)
+        {
+            Debug.Log("Path Exists From 0:0 to 10:10");
+        }
+        else
+        {
+            Debug.Log("Path does not Exist");
+        }
+    }
     // public static void func(Wall[,] maze, int m, int n)
     // {        
     //     for (int i = 0; i < m; i++)
