@@ -63,19 +63,19 @@ public static class Maze_Generator
             return false;
         }
     }
-    public static Wall[,] set_entrance_exit(Wall[,] maze, int m, int n)
-    {
-        var start_cell = maze[0,0];
-        Stack<bool> path = new Stack<bool>();
-        for (int i = 0; i < m; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
+    // public static Wall[,] set_entrance_exit(Wall[,] maze, int m, int n)
+    // {
+    //     var start_cell = maze[0,0];
+    //     Stack<bool> path = new Stack<bool>();
+    //     for (int i = 0; i < m; i++)
+    //     {
+    //         for (int j = 0; j < n; j++)
+    //         {
                 
-            }
-        }
-        return maze;
-    }
+    //         }
+    //     }
+    //     return maze;
+    // }
     public static Wall[,] ApplyRecursiveBacktracker(Wall[,] maze, int m, int n)
     {
         // here we make changes
