@@ -1,0 +1,26 @@
+5 5
+ttff
+fttf
+fftt
+tftf
+tttf
+ttff
+ttft
+fttf
+tfft
+ttff
+ftff
+tftf
+ttff
+fttf
+tfff
+ttff
+ftft
+tfft
+ttft
+ttff
+ftft
+fftt
+fftt
+fftt
+tfff
