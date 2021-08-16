@@ -185,7 +185,7 @@ public class Maze_Renderer : MonoBehaviour
         //Put 5 mazes in each Folder starting from 5 to 30
         for(int i = 0; i <= 35; i++)
         {
-            string folder = @"D:\Maze Game Project\Project-Rho\Assets\Mazes\Level_Set_" + folder_index;
+            string folder = @"D:\Maze Game Project\Project-Rho\Assets\Levels\Set_" + folder_index;
             if(!System.IO.Directory.Exists(folder))
             {
                 System.IO.Directory.CreateDirectory(folder);
@@ -215,8 +215,23 @@ public class Maze_Renderer : MonoBehaviour
     }    
     void Start()
     {     
+        // string path = @"D:\Maze Game Project\Project-Rho\Assets\Mazes\Set_1\Maze_1.txt";
+        // Draw_Maze(Convert.Txt_to_Array(path),Convert.get_dimensions(path)[0],Convert.get_dimensions(path)[1]);
+        // Draw_Maze(Maze_Generator.Create_Maze(5,5),5,5);
+        // Debug.Log("First_Maze in Start()");
+
         //generate_mazes();
+
         //Only use the above code to create Mazes of dimensions from 5 to 35 and store it in 31 folders  
         //Only call the create function to generate 5 levels for a maze of a given dimension in a folder
     }
+    // void Update() 
+    // {
+    //     if(Input.GetKeyDown(KeyCode.RightArrow))
+    //     {
+    //         delete_maze();
+    //         Draw_Maze(Maze_Generator.Create_Maze(40,40),40,40);
+    //         Debug.Log("Maze_Generated in Update()");
+    //     }
+    // }
 }

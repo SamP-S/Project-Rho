@@ -328,13 +328,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8387d8685fca0af4a9d878307874781a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m: 10
-  n: 10
+  m: 5
+  n: 5
+  number_of_levels: 5
   size: 1
   Floorprefab: {fileID: 4620968243713209682, guid: 5463104b944988c4a84aee64f052e78b, type: 3}
   wallPrefab: {fileID: 885246113528793981, guid: da89aed485616584ab2e4a357a5ce5ac, type: 3}
   entrancePrefab: {fileID: 9203474350884027418, guid: eea406c3ef730344a9ab26fec80c84ae, type: 3}
   exitPrefab: {fileID: 5196327905352401497, guid: 232e373e334264e47af1e14f01d0c2df, type: 3}
+  grid: []
 --- !u!4 &1387647836
 Transform:
   m_ObjectHideFlags: 0
