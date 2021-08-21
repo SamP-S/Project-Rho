@@ -216,6 +216,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &824528702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824528704}
+  - component: {fileID: 824528703}
+  m_Layer: 0
+  m_Name: Maze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &824528703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824528702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e58ff7a528dcd4daa0e02c0ed90397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 5
+  height: 5
+  seed: 0
+  cellSize: 10
+  entrancePosition: {x: 0, y: 0}
+  exitPosition: {x: 0, y: 0}
+  arr: 
+  wallPrefab: {fileID: 3860354985728822366, guid: f5fe2d485205a2648a2e396daa33f866, type: 3}
+  floorPrefab: {fileID: 4959348703536358315, guid: 23418d6e665c8f042a9b63b903650dee, type: 3}
+  entranceFloorPrefab: {fileID: 8741937802027974177, guid: 3a8303fcf4cb3ea4da8726a1af19d94c, type: 3}
+  exitFloorPrefab: {fileID: 2140906995842242579, guid: 65c0b8a683a98f74492b39d86667135c, type: 3}
+--- !u!4 &824528704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824528702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.799522, y: -6.4103837, z: -1.8374155}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058769518
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +281,7 @@ GameObject:
   - component: {fileID: 1058769521}
   - component: {fileID: 1058769520}
   - component: {fileID: 1058769519}
+  - component: {fileID: 1058769522}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -299,55 +354,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
---- !u!1 &1387647834
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1387647836}
-  - component: {fileID: 1387647835}
-  m_Layer: 0
-  m_Name: Maze_Renderer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1387647835
+--- !u!114 &1058769522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387647834}
+  m_GameObject: {fileID: 1058769518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8387d8685fca0af4a9d878307874781a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ba6bf1fc9b317646aeb688072b41452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m: 5
-  n: 5
-  number_of_levels: 5
-  size: 1
-  Floorprefab: {fileID: 4620968243713209682, guid: 5463104b944988c4a84aee64f052e78b, type: 3}
-  wallPrefab: {fileID: 885246113528793981, guid: da89aed485616584ab2e4a357a5ce5ac, type: 3}
-  entrancePrefab: {fileID: 9203474350884027418, guid: eea406c3ef730344a9ab26fec80c84ae, type: 3}
-  exitPrefab: {fileID: 5196327905352401497, guid: 232e373e334264e47af1e14f01d0c2df, type: 3}
-  grid: []
---- !u!4 &1387647836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387647834}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  speed: 0.05
