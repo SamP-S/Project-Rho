@@ -60,5 +60,5 @@ crashlytics-build.properties
 
 Assets/Plugins/*
 *.meta
-.gitignore
+*.gitignore
 
